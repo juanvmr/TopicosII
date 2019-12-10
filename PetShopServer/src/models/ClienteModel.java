@@ -4,10 +4,13 @@ public class ClienteModel {
 
     private String Nome;
     private String Endereco;
-    private String Sexo;
     private String Email;
     private String CPF;
     private int id;
+    
+    public ClienteModel() {
+    	
+    }
 
     public int getId() {
         return id;
@@ -24,8 +27,6 @@ public class ClienteModel {
     public void setCPF(String CPF) {
         this.CPF = CPF;
     }
-    private long Telefone;
-    private int Idade;
 
     public String getNome() {
         return Nome;
@@ -43,14 +44,6 @@ public class ClienteModel {
         this.Endereco = Endereco;
     }
 
-    public String getSexo() {
-        return Sexo;
-    }
-
-    public void setSexo(String Sexo) {
-        this.Sexo = Sexo;
-    }
-
     public String getEmail() {
         return Email;
     }
@@ -59,26 +52,9 @@ public class ClienteModel {
         this.Email = Email;
     }
 
-
-    public long getTelefone() {
-        return Telefone;
-    }
-
-    public void setTelefone(long Telefone) {
-        this.Telefone = Telefone;
-    }
-
-    public int getIdade() {
-        return Idade;
-    }
-
-    public void setIdade(int Idade) {
-        this.Idade = Idade;
-    }
-
     @Override
     public String toString() {
-        return "Nome = " + Nome + "\nEndereço = " + Endereco + "\nSexo = " + Sexo + "\nEmail = " + Email + "\nCPF = " + getCPF() + "\nTelefone = " + getTelefone() + "\nIdade = " + getIdade();
+        return "Nome = " + Nome + "\nEndereço = " + Endereco + "\nEmail = " + Email + "\nCPF = " + getCPF();
     }
 
 }

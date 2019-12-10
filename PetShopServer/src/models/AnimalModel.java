@@ -2,15 +2,18 @@ package models;
 
 public class AnimalModel {
 
-    private int clienteID;
     private String Nome;
     private String Raca;
     private String Sexo;
     private String Cor;
-    private int Idade;
-    private int Altura;
-    private int Peso;
+    private String Idade;
+    private String Altura;
+    private String Peso;
     private int id;
+    
+    public AnimalModel() {
+    	
+    }
 
     public int getId() {
         return id;
@@ -18,14 +21,6 @@ public class AnimalModel {
 
     public void setId(int id) {
         this.id = id;
-    }
-
-    public int getCliente() {
-        return clienteID;
-    }
-
-    public void setCliente(int clienteID) {
-        this.clienteID = clienteID;
     }
 
     public String getNome() {
@@ -60,27 +55,27 @@ public class AnimalModel {
         this.Cor = Cor;
     }
 
-    public int getIdade() {
+    public String getIdade() {
         return Idade;
     }
 
-    public void setIdade(int Idade) {
+    public void setIdade(String Idade) {
         this.Idade = Idade;
     }
 
-    public int getAltura() {
+    public String getAltura() {
         return Altura;
     }
 
-    public void setAltura(int Altura) {
+    public void setAltura(String Altura) {
         this.Altura = Altura;
     }
 
-    public int getPeso() {
+    public String getPeso() {
         return Peso;
     }
 
-    public void setPeso(int Peso) {
+    public void setPeso(String Peso) {
         this.Peso = Peso;
     }
 

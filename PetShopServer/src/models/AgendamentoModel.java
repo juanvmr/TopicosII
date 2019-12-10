@@ -1,28 +1,30 @@
 package models;
 
-import java.util.Date;
-
 public class AgendamentoModel {
 	
 	private int schedulingID;
-	private Date date;
-	private int animalID;
+	private String date;
+	private String animal;
 	private String service;
 	
-	public Date getDate() {
+	public AgendamentoModel() {
+		
+	}
+	
+	public String getDate() {
 		return date;
 	}
 
-	public void setDate(Date date) {
+	public void setDate(String date) {
 		this.date = date;
 	}
 
-	public int getAnimalID() {
-		return animalID;
+	public String getAnimal() {
+		return animal;
 	}
 
-	public void setAnimalID(int animalID) {
-		this.animalID = animalID;
+	public void setAnimal(String animal) {
+		this.animal = animal;
 	}
 
 	public String getService() {
@@ -43,6 +45,6 @@ public class AgendamentoModel {
 	
 	@Override
 	public String toString() {
-		return ("Data do agendamento: " + date.toString() + "\nServiÃ§o: " + service);
+		return ("Data do agendamento: " + date.toString() + "\nServiço: " + service);
 	}
 }
