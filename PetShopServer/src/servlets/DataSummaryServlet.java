@@ -79,8 +79,12 @@ public class DataSummaryServlet extends HttpServlet {
 
 	private void getData(HttpServletRequest req) {
 		try {
-			List<Object> listUsuario = agendamentoDao.select();
-			req.setAttribute("listUsuario", listUsuario);
+			List<Object> listAgendamento = agendamentoDao.select();
+			List<Object> listCliente = clienteDao.select();
+			List<Object> listAnimal = animalDao.select();
+			req.setAttribute("listAgendamento", listAgendamento);
+			req.setAttribute("listCliente", listCliente);
+			req.setAttribute("listAnimal", listAnimal);
 		}
         catch(SQLException e) {
         	e.printStackTrace();
