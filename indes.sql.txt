@@ -1,0 +1,3 @@
+create table cliente (id int NOT NULL AUTO_INCREMENT, nome varchar(255), endereco varchar(255), email varchar(255), cpf varchar(255));
+create table animal (id int NOT NULL AUTO_INCREMENT, nome varchar(255), peso varchar(255), raca varchar(255), altura varchar(255), cor varchar(255), idade varchar(255), sexo varchar(255));
+create table agendamento (id int NOT NULL AUTO_INCREMENT, data varchar(255), animal varchar(255), servico varchar(255));
